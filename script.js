@@ -64,7 +64,7 @@ const cartItems = () => {
             newDiv.innerHTML = `
                 <div
                     class="my-2 border-white border-2 rounded-lg p-2 font-semibold flex items-center justify-evenly gap-2">
-                    <img class="image w-1/5" src="${value.image}">
+                    <img class="image  h-10" src="${value.image}">
                     <div class="">
                         <h2 class="name font-bold">${value.title}</h2>
                         <h2 class="price text-sm">$${value.price}</h2>
