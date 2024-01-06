@@ -9,17 +9,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="max-w-6xl p-10 mx-auto">
     <div class="container">
-        <header>
+        <header class="flex bg-red-200 rounded-lg p-10 justify-between">
             <div class="title font-bold text-4xl">Food Cart</div>
-            <div class="cart-icon">
-                <svg class= text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+            <div class="cart-icon px-3 flex relative">
+                <svg class="pt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
                   </svg>
-                  <span>0</span>
+                  <span class="absolute bg-red-500 flex items-center justify-center w-7 text-white h-7 rounded-xl top-0 left-8">0</span>
             </div>
         </header>
+       
         
     </div>
 
