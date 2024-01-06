@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "image": "./images/burger.png",
+      "title": "Burger",
+      "price": 8.99
+    },
+    {
+      "id": 2,
+      "image": "./images/pizza.png",
+      "title": "Pizza",
+      "price": 12.99
+    },
+    {
+      "id": 3,
+      "image": "./images/pasta.png",
+      "title": "Pasta",
+      "price": 10.49
+    },
+    {
+      "id": 4,
+      "image": "./images/salad.png",
+      "title": "Salad",
+      "price": 7.99
+    },
+    {
+      "id": 5,
+      "image": "./images/chicken-fry.png",
+      "title": "Chicken Fry",
+      "price": 15.99
+    },
+    {
+      "id": 6,
+      "image": "./images/salmon.png",
+      "title": "Salmon Salad",
+      "price": 20.99
+    },
+    {
+      "id": 7,
+      "image": "./images/french-fries.png",
+      "title": "French Fries",
+      "price": 4.99
+    },
+    {
+      "id": 8,
+      "image": "./images/burrito.png",
+      "title": "Burrito",
+      "price": 9.49
+    },
+    {
+      "id": 9,
+      "image": "./images/sandwich.png",
+      "title": "Sandwich",
+      "price": 7.99
+    }
+  ]
+  

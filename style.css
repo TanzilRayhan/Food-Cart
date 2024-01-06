@@ -8,3 +8,6 @@ svg{
     width: 30px;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
