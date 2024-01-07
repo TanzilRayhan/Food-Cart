@@ -55,10 +55,11 @@ const cartItems = () => {
     let totalPrice = 0;
 
     cartLists.forEach((value, key) => {
-        totalPrice += value.price;
-        count += value.quantity;
 
         if (value != null) {
+            totalPrice += value.price;
+            count += value.quantity;
+
             let newDiv = document.createElement('div');
             newDiv.classList.add('items');
             newDiv.innerHTML = `
