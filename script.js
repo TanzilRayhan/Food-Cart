@@ -22,23 +22,21 @@ itemsData();
 const showItems = () => {
     foodListHtml.innerHTML = '';
     if (foodLists.length > 0) {
-        foodLists.forEach((item, key) => {
+        foodLists.map((item, key) => {
             let newItem = document.createElement('div');
             newItem.classList.add('food-card');
             newItem.innerHTML = `
-            <div class="h-72 border-purple-300 border-2 shadow-md rounded-lg bg-slate-100 hover:bg-sky-100 p-4 flex flex-col justify-center items-center">
+            <div class="h-72 w-full border-purple-300 border-2 shadow-md rounded-lg bg-slate-100 hover:bg-sky-100 p-4 flex flex-col justify-center items-center">
             <img class=" h-1/2 drop-shadow-lg" src="${item.image}">
             <h2 class="text-center pt-2 text-xl font-bold">${item.title}</h2>
             <h2 class="text-center py-2 text-base font-semibold">Price: $${item.price}</h2>
-            <button class="addCart w-full text-white bg-purple-600 hover:bg-slate-700 text-base font-medium p-2 rounded-lg" onclick="addToCart(${key})">Add To Cart</button>
+            <button class="addCart w-full text-white bg-purple-600 hover:bg-purple-700 focus:bg-slate-700 text-base font-medium p-2 rounded-lg " onclick="addToCart(${key})">Add To Cart</button>
             </div>
             `;
-
             foodListHtml.appendChild(newItem);
         })
     }
 }
-
 
 const addToCart = (key) => {
     if (cartLists[key] == null) {
@@ -54,8 +52,7 @@ const cartItems = () => {
     let count = 0;
     let totalPrice = 0;
 
-    cartLists.forEach((value, key) => {
-
+    cartLists.map((value, key) => {
         if (value != null) {
             totalPrice += value.price;
             count += value.quantity;
@@ -88,6 +85,7 @@ const cartItems = () => {
                 `
             cartListHtml.appendChild(newDiv);
         }
+       
         total.innerText = '$' + totalPrice.toLocaleString();
         quantity.innerText = count;
     })
