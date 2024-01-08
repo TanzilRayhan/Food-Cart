@@ -30,7 +30,7 @@ const showItems = () => {
             <img class=" h-1/2 drop-shadow-lg" src="${item.image}">
             <h2 class="text-center pt-2 text-xl font-bold">${item.title}</h2>
             <h2 class="text-center py-2 text-base font-semibold">Price: $${item.price}</h2>
-            <button class="addCart w-full text-white bg-purple-600 hover:bg-purple-700 focus:bg-slate-700 text-base font-medium p-2 rounded-lg " onclick="addToCart(${key})">Add To Cart</button>
+            <button class="addCart w-full text-white bg-purple-600 hover:bg-violet-500 focus:bg-slate-700 text-base font-medium p-2 rounded-lg " onclick="addToCart(${key})">Add To Cart</button>
             </div>
             `;
             foodListHtml.appendChild(newItem);
@@ -45,7 +45,6 @@ const addToCart = (key) => {
     }
     cartItems();
 }
-
 
 const cartItems = () => {
     cartListHtml.innerHTML = "";
@@ -82,15 +81,14 @@ const cartItems = () => {
                         </svg></button>
 
                 </div>
-                `
+                `;
             cartListHtml.appendChild(newDiv);
         }
-       
-        total.innerText = '$' + totalPrice.toLocaleString();
-        quantity.innerText = count;
-    })
+    });
+    total.innerText = '$' + totalPrice.toLocaleString();
+    quantity.innerText = count;
+   
 }
-
 const deleteItem = (key) => {
     cartLists.splice(key, 1);
     cartItems();
